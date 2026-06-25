@@ -1,0 +1,24 @@
+{
+  "name": "group-website-project",
+  "version": "1.0.0",
+  "description": "Welcome Group three's website project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htonnyg-droid/Group-website-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/htonnyg-droid/Group-website-project/issues"
+  },
+  "homepage": "https://github.com/htonnyg-droid/Group-website-project#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.1"
+  }
+}
