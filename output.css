@@ -1,4 +1,5 @@
 /*! tailwindcss v4.3.1 | MIT License | https://tailwindcss.com */
+@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -6,6 +7,26 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-green-500: oklch(72.3% 0.219 149.579);
+    --color-green-800: oklch(44.8% 0.119 151.328);
+    --color-teal-500: oklch(70.4% 0.14 182.503);
+    --spacing: 0.25rem;
+    --container-xl: 36rem;
+    --container-2xl: 42rem;
+    --container-4xl: 56rem;
+    --container-5xl: 64rem;
+    --container-6xl: 72rem;
+    --container-7xl: 80rem;
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -158,4 +179,457 @@
     display: none !important;
   }
 }
-@layer utilities;
+@layer utilities {
+  .visible {
+    visibility: visible;
+  }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
+  .mt-\[1px\] {
+    margin-top: 1px;
+  }
+  .mt-\[10px\] {
+    margin-top: 10px;
+  }
+  .mt-\[100px\] {
+    margin-top: 100px;
+  }
+  .mt-\[1537px\] {
+    margin-top: 1537px;
+  }
+  .flex {
+    display: flex;
+  }
+  .table {
+    display: table;
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-4\/12 {
+    height: calc(4 / 12 * 100%);
+  }
+  .h-36 {
+    height: calc(var(--spacing) * 36);
+  }
+  .h-40 {
+    height: calc(var(--spacing) * 40);
+  }
+  .h-64 {
+    height: calc(var(--spacing) * 64);
+  }
+  .h-96 {
+    height: calc(var(--spacing) * 96);
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .w-2\.5 {
+    width: calc(var(--spacing) * 2.5);
+  }
+  .w-2xl {
+    width: var(--container-2xl);
+  }
+  .w-4xl {
+    width: var(--container-4xl);
+  }
+  .w-5xl {
+    width: var(--container-5xl);
+  }
+  .w-6xl {
+    width: var(--container-6xl);
+  }
+  .w-7xl {
+    width: var(--container-7xl);
+  }
+  .w-17 {
+    width: calc(var(--spacing) * 17);
+  }
+  .w-26 {
+    width: calc(var(--spacing) * 26);
+  }
+  .w-26\.5 {
+    width: calc(var(--spacing) * 26.5);
+  }
+  .w-64 {
+    width: calc(var(--spacing) * 64);
+  }
+  .w-90 {
+    width: calc(var(--spacing) * 90);
+  }
+  .w-262 {
+    width: calc(var(--spacing) * 262);
+  }
+  .w-262\.5 {
+    width: calc(var(--spacing) * 262.5);
+  }
+  .w-264 {
+    width: calc(var(--spacing) * 264);
+  }
+  .w-264\.5 {
+    width: calc(var(--spacing) * 264.5);
+  }
+  .w-266 {
+    width: calc(var(--spacing) * 266);
+  }
+  .w-266\.5 {
+    width: calc(var(--spacing) * 266.5);
+  }
+  .w-268 {
+    width: calc(var(--spacing) * 268);
+  }
+  .w-268\.5 {
+    width: calc(var(--spacing) * 268.5);
+  }
+  .w-272 {
+    width: calc(var(--spacing) * 272);
+  }
+  .w-272\.5 {
+    width: calc(var(--spacing) * 272.5);
+  }
+  .w-9000 {
+    width: calc(var(--spacing) * 9000);
+  }
+  .w-\[1\] {
+    width: 1;
+  }
+  .w-\[10\] {
+    width: 10;
+  }
+  .w-\[11px\] {
+    width: 11px;
+  }
+  .w-\[100\] {
+    width: 100;
+  }
+  .w-\[102\] {
+    width: 102;
+  }
+  .w-\[103\] {
+    width: 103;
+  }
+  .w-\[114px\] {
+    width: 114px;
+  }
+  .w-\[1000\] {
+    width: 1000;
+  }
+  .w-\[1020\] {
+    width: 1020;
+  }
+  .w-\[1027\] {
+    width: 1027;
+  }
+  .w-\[1034\] {
+    width: 1034;
+  }
+  .w-\[1050\] {
+    width: 1050;
+  }
+  .w-\[1050p\] {
+    width: 1050p;
+  }
+  .w-\[1050px\] {
+    width: 1050px;
+  }
+  .w-\[1140px\] {
+    width: 1140px;
+  }
+  .w-\[1145px\] {
+    width: 1145px;
+  }
+  .w-\[1148px\] {
+    width: 1148px;
+  }
+  .w-\[1149px\] {
+    width: 1149px;
+  }
+  .w-\[1150px\] {
+    width: 1150px;
+  }
+  .w-\[1152px\] {
+    width: 1152px;
+  }
+  .w-\[9000\] {
+    width: 9000;
+  }
+  .w-xl {
+    width: var(--container-xl);
+  }
+  .max-w-500 {
+    max-width: calc(var(--spacing) * 500);
+  }
+  .max-w-\[300px\] {
+    max-width: 300px;
+  }
+  .max-w-\[400px\] {
+    max-width: 400px;
+  }
+  .max-w-\[500px\] {
+    max-width: 500px;
+  }
+  .max-w-max {
+    max-width: max-content;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-row {
+    flex-direction: row;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-1 {
+    gap: var(--spacing);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-2\.5 {
+    gap: calc(var(--spacing) * 2.5);
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
+  .gap-16 {
+    gap: calc(var(--spacing) * 16);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .bg-green-500 {
+    background-color: var(--color-green-500);
+  }
+  .bg-green-800 {
+    background-color: var(--color-green-800);
+  }
+  .bg-teal-500 {
+    background-color: var(--color-teal-500);
+  }
+  .p-1 {
+    padding: var(--spacing);
+  }
+  .p-12 {
+    padding: calc(var(--spacing) * 12);
+  }
+  .p-16 {
+    padding: calc(var(--spacing) * 16);
+  }
+  .p-20 {
+    padding: calc(var(--spacing) * 20);
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .text-6xl {
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
+  }
+  .text-\[4px\] {
+    font-size: 4px;
+  }
+  .text-\[5px\] {
+    font-size: 5px;
+  }
+  .text-\[40\.2px\] {
+    font-size: 40.2px;
+  }
+  .text-\[40\.3px\] {
+    font-size: 40.3px;
+  }
+  .text-\[40\.4px\] {
+    font-size: 40.4px;
+  }
+  .text-\[40\.5px\] {
+    font-size: 40.5px;
+  }
+  .text-\[40\.6px\] {
+    font-size: 40.6px;
+  }
+  .text-\[40\.7px\] {
+    font-size: 40.7px;
+  }
+  .text-\[40px\] {
+    font-size: 40px;
+  }
+  .text-\[41px\] {
+    font-size: 41px;
+  }
+  .text-\[42px\] {
+    font-size: 42px;
+  }
+  .text-\[44px\] {
+    font-size: 44px;
+  }
+  .text-\[45px\] {
+    font-size: 45px;
+  }
+  .text-\[46px\] {
+    font-size: 46px;
+  }
+  .text-\[47px\] {
+    font-size: 47px;
+  }
+  .text-\[48px\] {
+    font-size: 48px;
+  }
+  .text-\[49px\] {
+    font-size: 49px;
+  }
+  .text-\[50px\] {
+    font-size: 50px;
+  }
+  .leading-1 {
+    --tw-leading: var(--spacing);
+    line-height: var(--spacing);
+  }
+  .leading-4 {
+    --tw-leading: calc(var(--spacing) * 4);
+    line-height: calc(var(--spacing) * 4);
+  }
+  .leading-16 {
+    --tw-leading: calc(var(--spacing) * 16);
+    line-height: calc(var(--spacing) * 16);
+  }
+  .leading-32 {
+    --tw-leading: calc(var(--spacing) * 32);
+    line-height: calc(var(--spacing) * 32);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .text-\[4\] {
+    color: 4;
+  }
+  .text-\[40\.px\] {
+    color: 40.px;
+  }
+  .text-\[45\] {
+    color: 45;
+  }
+  .text-\[px\] {
+    color: px;
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .\[clip-path\:polygon\(50\%_0\%\,90\%_18\%\,100\%_\%\,72\%_100\%\,28\%_100\%\,0\%_62\%\,10\%_18\%\)\] {
+    clip-path: polygon(50% 0%,90% 18%,100% %,72% 100%,28% 100%,0% 62%,10% 18%);
+  }
+  .\[clip-path\:polygon\(50\%_0\%\,90\%_18\%\,100\%_62\%\,72\%_100\%\,28\%_100\%\,0\%_62\%\,\%_18\%\)\] {
+    clip-path: polygon(50% 0%,90% 18%,100% 62%,72% 100%,28% 100%,0% 62%,% 18%);
+  }
+  .\[clip-path\:polygon\(50\%_0\%\,90\%_18\%\,100\%_62\%\,72\%_100\%\,28\%_100\%\,0\%_62\%\,10\%_18\%\)\] {
+    clip-path: polygon(50% 0%,90% 18%,100% 62%,72% 100%,28% 100%,0% 62%,10% 18%);
+  }
+  .\[clip-path\:polygon\(50\%_0\%\,90\%_18\%\,100\%_62\%\,72\%_100\%\,28\%_100\%\,0\%_62\%\,10\%_60\%\)\] {
+    clip-path: polygon(50% 0%,90% 18%,100% 62%,72% 100%,28% 100%,0% 62%,10% 60%);
+  }
+  .\[clip-path\:polygon\(50\%_0\%\,90\%_18\%\,100\%_62\%\,72\%_100\%\,28\%_100\%\,0\%_62\%\,60\%_18\%\)\] {
+    clip-path: polygon(50% 0%,90% 18%,100% 62%,72% 100%,28% 100%,0% 62%,60% 18%);
+  }
+  .\[clip-path\:polygon\(50\%_0\%\,90\%_18\%\,100\%_90\%\,72\%_100\%\,28\%_100\%\,0\%_62\%\,10\%_18\%\)\] {
+    clip-path: polygon(50% 0%,90% 18%,100% 90%,72% 100%,28% 100%,0% 62%,10% 18%);
+  }
+  .\[clip-path\:polygon\(50\%_0\%\,100\%_25\%\,100\%_75\%\,\%_100\%\,0\%_75\%\,0\%_25\%\,25\%_100\)\] {
+    clip-path: polygon(50% 0%,100% 25%,100% 75%,% 100%,0% 75%,0% 25%,25% 100);
+  }
+  .\[clip-path\:polygon\(50\%_0\%\,100\%_25\%\,100\%_75\%\,25\%_50\%\,0\%_75\%\,0\%_25\%\,25\%_100\)\] {
+    clip-path: polygon(50% 0%,100% 25%,100% 75%,25% 50%,0% 75%,0% 25%,25% 100);
+  }
+  .\[clip-path\:polygon\(50\%_0\%\,100\%_25\%\,100\%_75\%\,25\%_100\%\,0\%_75\%\,0\%_25\%\,25\%_100\)\] {
+    clip-path: polygon(50% 0%,100% 25%,100% 75%,25% 100%,0% 75%,0% 25%,25% 100);
+  }
+  .\[clip-path\:polygon\(50\%_0\%\,100\%_25\%\,100\%_75\%\,50\%_100\%\,0\%_75\%\,0\%_25\%\)\] {
+    clip-path: polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+  }
+  .\[clip-path\:polygon\(50\%_0\%\,100\%_25\%\,100\%_75\%\,50\%_100\%\,0\%_75\%\,0\%_25\%\,\)\] {
+    clip-path: polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%,);
+  }
+  .\[clip-path\:polygon\(50\%_0\%\,100\%_25\%\,100\%_75\%\,50\%_100\%\,0\%_75\%\,0\%_25\%\,2\)\] {
+    clip-path: polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%,2);
+  }
+  .\[clip-path\:polygon\(50\%_0\%\,100\%_25\%\,100\%_75\%\,50\%_100\%\,0\%_75\%\,0\%_25\%\,25\%\)\] {
+    clip-path: polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%,25%);
+  }
+  .\[clip-path\:polygon\(50\%_0\%\,100\%_25\%\,100\%_75\%\,50\%_100\%\,0\%_75\%\,0\%_25\%\,25\%_\)\] {
+    clip-path: polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%,25% );
+  }
+  .\[clip-path\:polygon\(50\%_0\%\,100\%_25\%\,100\%_75\%\,50\%_100\%\,0\%_75\%\,0\%_25\%\,25\%_100\)\] {
+    clip-path: polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%,25% 100);
+  }
+  .\[clip-path\:polygon\(50\%_0\%\,100\%_25\%\,100\%_75\%\,50\%_100\%\,0\%_75\%\,0\%_25\%\,25\)\] {
+    clip-path: polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%,25);
+  }
+  .\[clip-path\:polygon\(50\%_0\%\,100\%_25\%\,100\%_75\%\,50\%_100\%\,0\%_75\%\,0\%_25\%\,225\)\] {
+    clip-path: polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%,225);
+  }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-outline-style: solid;
+    }
+  }
+}
