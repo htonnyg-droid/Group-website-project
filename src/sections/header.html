@@ -17,37 +17,39 @@
 </style>
 </head>
 <body>
-    <div class="mx-8 my-4 flex items-start justify-between">
-        <div class="font-normal text-[15px] md:text-[24px]">
-            <div>DE</div>
-            <div>EN</div>
-        </div>
-        <div class="font-semibold md:text-[48px] text-[32px] self-center">Baumeister</div>
-        <div class="hidden lg:block font-normal text-[24px]">
-            <a href="#about">About</a><br>
-            <a href="#services">Services</a><br>
-            <a href="#references">References</a><br>
-            <a href="">Contact</a>
-        </div>
-        <!-- sm and md responsiveness and icons -->
-        <div id="dropdown" class="bg-black sm:w-10 md:w-16 sm:h-6 md:h-10 lg:hidden self-center" style="clip-path: polygon(3% 20%, 76% 11%, 100% 56%, 84% 100%, 11% 94%, 0 60%)">
-            <div class="icons">
-                <div class="sm:block md:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="23px" viewBox="0 -960 960 960" width="39px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
-                <div class="hidden md:block lg:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="37.47px" viewBox="0 -960 960 960" width="63.54px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
+    <header>
+            <div class="mx-8 my-4 flex items-start justify-between">
+            <div class="font-normal text-[15px] md:text-[24px]">
+                <div>DE</div>
+                <div>EN</div>
             </div>
-            <div class="icons hidden">
-                <div class="sm:block md:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="23px" viewBox="0 -960 960 960" width="39px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></div>
-                <div class="hidden md:block lg:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="37.47px" viewBox="0 -960 960 960" width="63.54px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></div>
+            <div class="font-semibold md:text-[48px] text-[32px] self-center">Baumeister</div>
+            <div class="hidden lg:block font-normal text-[24px]">
+                <a href="#about">About</a><br>
+                <a href="#services">Services</a><br>
+                <a href="#references">References</a><br>
+                <a href="">Contact</a>
             </div>
-        </div>
-        
-    </div>
-    <div id="menu" class="hidden text-[#00672E] text-[32px] font-semibold text-center">
-        <a href="">About</a><br>
-        <a href="">Services</a><br>
-        <a href="">References</a><br>
-        <a href="">Contact</a>
-    </div>
+            <!-- sm and md responsiveness and icons -->
+            <div id="dropdown" class="bg-black sm:w-10 md:w-16 sm:h-6 md:h-10 lg:hidden self-center" style="clip-path: polygon(3% 20%, 76% 11%, 100% 56%, 84% 100%, 11% 94%, 0 60%)">
+                <div class="icons">
+                    <div class="sm:block md:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="23px" viewBox="0 -960 960 960" width="39px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
+                    <div class="hidden md:block lg:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="37.47px" viewBox="0 -960 960 960" width="63.54px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
+                </div>
+                <div class="icons hidden">
+                    <div class="sm:block md:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="23px" viewBox="0 -960 960 960" width="39px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></div>
+                    <div class="hidden md:block lg:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="37.47px" viewBox="0 -960 960 960" width="63.54px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></div>
+                </div>
+            </div>
+            
+            </div>
+            <div id="menu" class="hidden text-[#00672E] text-[32px] font-semibold text-center">
+                <a href="">About</a><br>
+                <a href="">Services</a><br>
+                <a href="">References</a><br>
+                <a href="">Contact</a>
+            </div>
+    </header>
     <script>
         const menu = document.getElementById('menu');
         const icon = document.querySelectorAll('.icons');
