@@ -5,23 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="build/output.css">
     <title>Group 3 Website Project</title>
-</head>
-<script>
-    const loadComponents = (id, url) =>  {
-        fetch(url)
-        .then((response) => response.text())
-        .then((html) => {
-            document.getElementById(id).innerHTML = html;
-        });
-    }
+    <script>
+        async function loadComponent(id, url) {
+            const element = document.getElementById(id);
+            if (!element) return;
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${url}: ${response.status}`);
+                }
+                element.innerHTML = await response.text();
+            } catch (error) {
+                console.error(error);
+                element.innerHTML = `<div class="p-6 text-red-600">Unable to load section: ${id}</div>`;
+            }
+        }
 
-    window.onload = () => {
-        loadComponents('header', 'src/sections/header.html');
-        loadComponents('hero', 'src/sections/hero.html');
-        loadComponents('contact', 'src/sections/contact.html');
-        loadComponents('footer', 'src/sections/footer.html');
-    }
-</script>
+        window.addEventListener('DOMContentLoaded', () => {
+            loadComponent('header', 'src/sections/header.html');
+            loadComponent('hero', 'src/sections/hero.html');
+            loadComponent('contact', 'src/sections/contact.html');
+            loadComponent('footer', 'src/sections/footer.html');
+        });
+    </script>
+</head>
 <body>
     <div id="header"></div>
     <div id="hero"></div>
