@@ -7,6 +7,39 @@
     <link rel="stylesheet" href="../../output.css">
 </head>
 <body class="text-green-600">
+    <header class="pb-9.5">
+            <div class="mx-8 my-4 flex items-start justify-between">
+            <div class="font-normal text-[15px] md:text-[24px]">
+                <div>DE</div>
+                <div>EN</div>
+            </div>
+            <div class="font-semibold md:text-[48px] text-[32px] self-center">Baumeister</div>
+            <div class="hidden lg:block font-normal text-[24px]">
+                <a href="#about">About</a><br>
+                <a href="#services">Services</a><br>
+                <a href="#references">References</a><br>
+                <a href="">Contact</a>
+            </div>
+            <!-- sm and md responsiveness and icons -->
+            <div id="dropdown" class="bg-black sm:w-10 md:w-16 sm:h-6 md:h-10 lg:hidden self-center" style="clip-path: polygon(3% 20%, 76% 11%, 100% 56%, 84% 100%, 11% 94%, 0 60%)">
+                <div class="icons">
+                    <div class="sm:block md:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="23px" viewBox="0 -960 960 960" width="39px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
+                    <div class="hidden md:block lg:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="37.47px" viewBox="0 -960 960 960" width="63.54px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
+                </div>
+                <div class="icons hidden">
+                    <div class="sm:block md:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="23px" viewBox="0 -960 960 960" width="39px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></div>
+                    <div class="hidden md:block lg:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="37.47px" viewBox="0 -960 960 960" width="63.54px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></div>
+                </div>
+            </div>
+            
+            </div>
+            <div id="menu" class="hidden text-[#00672E] text-[32px] font-semibold text-center">
+                <a href="">About</a><br>
+                <a href="">Services</a><br>
+                <a href="">References</a><br>
+                <a href="">Contact</a>
+            </div>
+    </header>
     <div class="w-5/6 p-6 mx-auto text-3xl font-medium md:text-2xl">
         <div class="flex w-full md:flex-row text-green-700 mb-3.5 gap-8 flex-col items-end">
             <div class="w-full md:basis-2/3 min-w-0">
@@ -28,5 +61,51 @@
             </div>
         </div>
     </div>
+
+    <div>
+        <div class="bg-red-600 [clip-path:polygon(3%_13%,73%_4%,100%_49%,85%_97%,24%_92%,0_49%)] w-xl h-94 max-md:w-lg max-md:h-72 max-sm:w-80 max-sm:h-60 mx-auto my-44"></div>
+    </div>
+    
+    <footer class="md:w-11/12 mx-auto md:text-2xl font-bold text-lg px-4">
+        <div class="flex flex-row justify-between flex-wrap lg:flex-nowrap items-start sm:shrink-0 overflow-x-auto gap-y-4">
+            
+            <div class="flex flex-col sm:w-64 md:w-1/2 lg:w-auto pb-4 pt-2 shrink-0 tracking-tight justify-between">
+                <p>Agentur Baumeister</p>
+                <p>Böckhstraße 13</p>
+                <p>10967 Berlin</p>
+            </div>
+            
+            <div class="w-full pb-4 text-left md:w-1/2 lg:w-auto pt-2 md:shrink-0 shrink-0 sm:order-1 md:order-1 lg:order-0 md:text-right lg:text-left">
+                <a class="underline" href="mailto:hallo@agentur-baumeister.com">hallo@agentur-baumeister.com</a>
+                <p>+49 (0)30 - 490 827 87</p>
+            </div>
+            
+            <div class="pb-4 pt-2 md:order-1 sm:order-3 shrink-0 sm:w-auto lg:order-0">
+                <p>LinkedIn</p>
+            </div>
+            
+            <div class="pb-4 pt-2 md:order-2 sm:order-4 shrink-0 sm:w-auto lg:order-0">
+                <p>Instagram</p>
+            </div>
+            
+            <div class="text-right md:order-3 flex flex-row flex-nowrap gap-4 md:justify-between sm:justify-between sm:order-1 md:flex-row lg:order-0 lg:flex-col lg:justify-start lg:text-right sm:flex-nowrap sm:w-1/2 lg:w-auto md:w-1/2 pt-2 pb-4 shrink-0">
+                <p class="shrink-0">Impressum</p>
+                <p class="shrink-0">Datenschutz</p>
+            </div>
+            
+        </div>
+    </footer>
+    <script>
+        const menu = document.getElementById('menu');
+        const icon = document.querySelectorAll('.icons');
+        const iconDiv = document.getElementById('dropdown');
+
+        iconDiv.addEventListener('click', ()=>{
+            menu.classList.toggle('hidden');
+            icon.forEach((stuff) =>{
+                stuff.classList.toggle('hidden');
+            });
+        });
+    </script>
 </body>
 </html>
