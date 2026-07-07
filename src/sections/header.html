@@ -1,10 +1,87 @@
-<header class="bg-white border-b border-slate-200">
-  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-6 sm:px-6 lg:px-8">
-    <div class="text-2xl font-bold text-slate-900">Agentur Baumeister</div>
-    <nav class="flex gap-6 text-sm font-medium text-slate-600">
-      <a href="#hero" class="hover:text-slate-900">Home</a>
-      <a href="#contact" class="hover:text-slate-900">Imprint</a>
-      <a href="#footer" class="hover:text-slate-900">Footer</a>
-    </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<<<<<<< HEAD
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Group 3 Website Project</title>
+    <style>
+    body {
+        font-family: 'Outfit', sans-serif;
+    }
+</style>
+</head>
+<body>
+    <header>
+            <div class="mx-8 my-4 flex items-start justify-between">
+            <div class="font-normal text-[15px] md:text-[24px]">
+                <div>DE</div>
+                <div>EN</div>
+            </div>
+            <div class="font-semibold md:text-[48px] text-[32px] self-center">Baumeister</div>
+            <div class="hidden lg:block font-normal text-[24px]">
+                <a href="#about">About</a><br>
+                <a href="#services">Services</a><br>
+                <a href="#references">References</a><br>
+                <a href="">Contact</a>
+            </div>
+            <!-- sm and md responsiveness and icons -->
+            <div id="dropdown" class="bg-black sm:w-10 md:w-16 sm:h-6 md:h-10 lg:hidden self-center" style="clip-path: polygon(3% 20%, 76% 11%, 100% 56%, 84% 100%, 11% 94%, 0 60%)">
+                <div class="icons">
+                    <div class="sm:block md:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="23px" viewBox="0 -960 960 960" width="39px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
+                    <div class="hidden md:block lg:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="37.47px" viewBox="0 -960 960 960" width="63.54px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
+                </div>
+                <div class="icons hidden">
+                    <div class="sm:block md:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="23px" viewBox="0 -960 960 960" width="39px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></div>
+                    <div class="hidden md:block lg:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="37.47px" viewBox="0 -960 960 960" width="63.54px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></div>
+                </div>
+            </div>
+            
+            </div>
+            <div id="menu" class="hidden text-[#00672E] text-[32px] font-semibold text-center">
+                <a href="">About</a><br>
+                <a href="">Services</a><br>
+                <a href="">References</a><br>
+                <a href="">Contact</a>
+            </div>
+    </header>
+    <script>
+        const menu = document.getElementById('menu');
+        const icon = document.querySelectorAll('.icons');
+        const iconDiv = document.getElementById('dropdown');
+
+        iconDiv.addEventListener('click', ()=>{
+            menu.classList.toggle('hidden');
+            icon.forEach((stuff) =>{
+                stuff.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+=======
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <img src="yellow.png" alt="">
+    <img src="pink.png" alt="">
+    <img src="blue.png" alt="">
+    <img src="green.png" alt="">
+    <img src="green2.png" alt="" class="w-[406px] h-[776.5px] absulote top-[504.5px] left-[1107px] rotate-0 opacity-100 bg-[#00672E] border border-[#000000] pb-16 pt-16 pr-8">
+    <img src="red.png" alt="">
+    
   </div>
-</header>
+</body>
+</html>
+>>>>>>> origin/revert-2-feature/here

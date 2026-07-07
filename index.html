@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="build/output.css">
+    <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
     <title>Group 3 Website Project</title>
-    <script>
-        async function loadComponent(id, url) {
-            const element = document.getElementById(id);
-            if (!element) return;
-            try {
-                const response = await fetch(url);
-                if (!response.ok) {
-                    throw new Error(`Failed to load ${url}: ${response.status}`);
-                }
-                element.innerHTML = await response.text();
-            } catch (error) {
-                console.error(error);
-                element.innerHTML = `<div class="p-6 text-red-600">Unable to load section: ${id}</div>`;
-            }
-        }
+</head>
+<body>
+<script>
+    const loadComponents = (id, url) =>  {
+        fetch(url)
+        .then((response) => response.text())
+        .then((html) => {
+            document.getElementById(id).innerHTML = html;
+        });
+    }
 
         window.onload = () => {
             loadComponent('header', 'src/sections/header.html');
@@ -34,5 +35,4 @@
     <div id="hero"></div>
     <div id="contact"></div>
     <div id="footer"></div>
-</body>
 </html>
