@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="build/output.css">
+    <link rel="stylesheet" href="output.css">
     <title>Group 3 Website Project</title>
     <script>
         async function loadComponent(id, url) {
@@ -21,12 +21,12 @@
             }
         }
 
-        window.addEventListener('DOMContentLoaded', () => {
+        window.onload = () => {
             loadComponent('header', 'src/sections/header.html');
             loadComponent('hero', 'src/sections/hero.html');
             loadComponent('contact', 'src/sections/contact.html');
             loadComponent('footer', 'src/sections/footer.html');
-        });
+        };
     </script>
 </head>
 <body>
