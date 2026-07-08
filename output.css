@@ -320,6 +320,9 @@
   .mt-28 {
     margin-top: calc(var(--spacing) * 28);
   }
+  .mt-60 {
+    margin-top: calc(var(--spacing) * 60);
+  }
   .mr-12 {
     margin-right: calc(var(--spacing) * 12);
   }
@@ -827,14 +830,26 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
+  }
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
   .py-48 {
     padding-block: calc(var(--spacing) * 48);
   }
+  .py-50 {
+    padding-block: calc(var(--spacing) * 50);
+  }
   .py-58 {
     padding-block: calc(var(--spacing) * 58);
+  }
+  .py-60 {
+    padding-block: calc(var(--spacing) * 60);
+  }
+  .py-70 {
+    padding-block: calc(var(--spacing) * 70);
   }
   .py-78 {
     padding-block: calc(var(--spacing) * 78);
@@ -922,6 +937,9 @@
   }
   .text-right {
     text-align: right;
+  }
+  .align-top {
+    vertical-align: top;
   }
   .font-\[\'Outfit\'\] {
     font-family: 'Outfit';
