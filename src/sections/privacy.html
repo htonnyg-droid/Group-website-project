@@ -8,68 +8,9 @@
   <title>Document</title>
 </head>
 
-<header>
-  <div class="mx-8 my-4 flex items-start justify-between">
-    <div class="font-normal text-[15px] md:text-[24px]">
-      <div>DE</div>
-      <div>EN</div>
-    </div>
-    <div class="font-semibold md:text-[48px] text-[32px] self-center">Baumeister</div>
-    <div class="hidden lg:block font-bold text-green-500 text-[24px]">
-      <a href="#about">About</a><br>
-      <a href="#services">Services</a><br>
-      <a href="#references">References</a><br>
-      <a href="">Contact</a>
-    </div>
-    <!-- sm and md responsiveness and icons -->
-    <div id="dropdown" class="bg-black sm:w-10 md:w-16 sm:h-6 md:h-10 lg:hidden self-center"
-      style="clip-path: polygon(3% 20%, 76% 11%, 100% 56%, 84% 100%, 11% 94%, 0 60%)">
-      <div class="icons">
-        <div class="sm:block md:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="23px"
-            viewBox="0 -960 960 960" width="39px" fill="#FFFFFF">
-            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-          </svg></div>
-        <div class="hidden md:block lg:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="37.47px"
-            viewBox="0 -960 960 960" width="63.54px" fill="#FFFFFF">
-            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-          </svg></div>
-      </div>
-      <div class="icons hidden">
-        <div class="sm:block md:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="23px"
-            viewBox="0 -960 960 960" width="39px" fill="#FFFFFF">
-            <path
-              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-          </svg></div>
-        <div class="hidden md:block lg:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="37.47px"
-            viewBox="0 -960 960 960" width="63.54px" fill="#FFFFFF">
-            <path
-              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-          </svg></div>
-      </div>
-    </div>
-
-  </div>
-  <div id="menu" class="hidden text-[#00672E] text-[32px] font-semibold text-center">
-    <a href="">About</a><br>
-    <a href="">Services</a><br>
-    <a href="">References</a><br>
-    <a href="">Contact</a>
-  </div>
-</header>
-
-<a href=""></a>
-<script>
-  const menu = document.getElementById('menu');
-  const icon = document.querySelectorAll('.icons');
-  const iconDiv = document.getElementById('dropdown');
-
-  iconDiv.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-    icon.forEach((stuff) => {
-      stuff.classList.toggle('hidden');
-    });
-  });
-</script>
+<div>
+  <div id="header"></div>
+</div>
 
 <body class="px-16 py-16 md:px-24 lg:px-24">
 
@@ -833,35 +774,27 @@
 
     </div>
   </div>
-  <div>
-    <div class="bg-red-600 [clip-path:polygon(3%_13%,73%_4%,100%_49%,85%_97%,24%_92%,0_49%)] w-xl h-94 mx-auto my-44">
-    </div>
-  </div>
 
-  <footer class="max-w-11/12 mx-auto  text-2xl font-bold min-w-2xl">
-    <div class="flex flex-row justify-between flex-wrap  items-start sm:shrink-0">
-      <div class="flex flex-col sm:w-64 md:w-1/2 lg:w-1/6 pb-8 pt-2  md:shrink-0">
-        <p>Agentur Baumeister</p>
-        <p>Böckhstraße 13</p>
-        <p>10967 Berlin</p>
-      </div>
-      <div
-        class="sm:w-full pb-8 text-left md:w-1/2 lg:w-1/6 pt-2 md:shrink-0 min-w-40 sm:shrink-0 sm:order-1 sm:col-span-2 md:order-1 md:col-span-2 lg:order-1 lg:flex-col">
-        <a class="underline" href="">hallo@agentur-baumeister.com</a>
-        <p>+49 (0)30 - 490 827 87</p>
-      </div>
-      <div class="pb-8 pt-2 md:order-1 sm:order-3">
-        <p>LinkedIn</p>
-      </div>
-      <div class="pb-8 pt-2 md:order-2 sm:order-4">
-        <p>Instagram</p>
-      </div>
-      <div
-        class="text-right md:order-3 sm:flex md:justify-between sm:justify-between sm:order-1 sm:col-span-2 md:flex-row md:col-span-2 lg:order-5 lg:flex-col sm:flex-row-reverse lg:justify-end sm:flex-nowrap sm:w-1/2 lg:w-1/6 md:w-1/2 pt-2 pb-8">
-        <a href="contact.html">Impressum</a>
-        <a href="privacy.html">Datenschutz</a>
-      </div>
-    </div>
+  <footer>
+    <div id="footer"></div>
+  
   </footer>
 
 </html>
+
+
+<script>
+  const loadComponents = (id, url) => {
+    fetch(url)
+      .then((response) => response.text())
+      .then((html) => {
+        document.getElementById(id).innerHTML = html;
+      });
+  }
+
+  window.onload = () => {
+    loadComponents('header', '/src/sections/header.html');
+    loadComponents('footer', '/src/sections/footer.html');
+  }
+</script>
+
