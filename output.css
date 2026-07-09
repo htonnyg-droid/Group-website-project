@@ -11,7 +11,6 @@
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-red-600: oklch(57.7% 0.245 27.325);
     --color-red-700: oklch(50.5% 0.213 27.518);
-    --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-amber-500: oklch(76.9% 0.188 70.08);
@@ -247,21 +246,6 @@
   .top-0 {
     top: 0;
   }
-  .top-5 {
-    top: calc(var(--spacing) * 5);
-  }
-  .top-7 {
-    top: calc(var(--spacing) * 7);
-  }
-  .top-8 {
-    top: calc(var(--spacing) * 8);
-  }
-  .top-10 {
-    top: calc(var(--spacing) * 10);
-  }
-  .top-12 {
-    top: calc(var(--spacing) * 12);
-  }
   .top-\[3906px\] {
     top: 3906px;
   }
@@ -270,9 +254,6 @@
   }
   .left-0 {
     left: 0;
-  }
-  .left-10 {
-    left: calc(var(--spacing) * 10);
   }
   .left-249 {
     left: calc(var(--spacing) * 249);
@@ -569,9 +550,6 @@
   .bg-transparent {
     background-color: transparent;
   }
-  .bg-white {
-    background-color: var(--color-white);
-  }
   .object-contain {
     object-fit: contain;
   }
@@ -826,11 +804,6 @@
       width: calc(var(--spacing) * 80);
     }
   }
-  .sm\:z-70 {
-    @media (width >= 40rem) {
-      z-index: 70;
-    }
-  }
   .sm\:order-1 {
     @media (width >= 40rem) {
       order: 1;
@@ -891,11 +864,6 @@
       width: 100%;
     }
   }
-  .sm\:max-w-90 {
-    @media (width >= 40rem) {
-      max-width: calc(var(--spacing) * 90);
-    }
-  }
   .sm\:max-w-\[360px\] {
     @media (width >= 40rem) {
       max-width: 360px;
@@ -919,11 +887,6 @@
   .sm\:justify-between {
     @media (width >= 40rem) {
       justify-content: space-between;
-    }
-  }
-  .sm\:bg-amber-50 {
-    @media (width >= 40rem) {
-      background-color: var(--color-amber-50);
     }
   }
   .sm\:p-8 {
@@ -1003,11 +966,6 @@
       width: calc(var(--spacing) * 16);
     }
   }
-  .md\:max-w-90 {
-    @media (width >= 48rem) {
-      max-width: calc(var(--spacing) * 90);
-    }
-  }
   .md\:max-w-\[360px\] {
     @media (width >= 48rem) {
       max-width: 360px;
@@ -1041,11 +999,6 @@
   .md\:justify-between {
     @media (width >= 48rem) {
       justify-content: space-between;
-    }
-  }
-  .md\:bg-transparent {
-    @media (width >= 48rem) {
-      background-color: transparent;
     }
   }
   .md\:p-10 {
@@ -1140,11 +1093,6 @@
   .lg\:w-auto {
     @media (width >= 64rem) {
       width: auto;
-    }
-  }
-  .lg\:max-w-100 {
-    @media (width >= 64rem) {
-      max-width: calc(var(--spacing) * 100);
     }
   }
   .lg\:max-w-\[400px\] {
