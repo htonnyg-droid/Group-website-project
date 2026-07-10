@@ -865,3 +865,20 @@
   </footer>
 
 </html>
+
+
+<script>
+  const loadComponents = (id, url) => {
+    fetch(url)
+      .then((response) => response.text())
+      .then((html) => {
+        document.getElementById(id).innerHTML = html;
+      });
+  }
+
+  window.onload = () => {
+    loadComponents('header', '/src/sections/header.html');
+    loadComponents('footer', '/src/sections/footer.html');
+  }
+</script>
+
