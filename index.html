@@ -14,18 +14,36 @@
 </head>
 <body>
 <script>
-    const loadComponents = (id, url) =>  {
+    const loadComponents = (id, url, callback = null) => {
         fetch(url)
-        .then((response) => response.text())
-        .then((html) => {
-            document.getElementById(id).innerHTML = html;
-        });
+            .then((response) => response.text())
+            .then((html) => {
+                document.getElementById(id).innerHTML = html;
+
+                if (callback) {
+                    callback();
+                }
+            });
+    }
+
+    const initNavbarToggle = () => {
+        const menu = document.getElementById('menu');
+        const icon = document.querySelectorAll('.icons');
+        const iconDiv = document.getElementById('dropdown');
+
+        if (iconDiv) {
+            iconDiv.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                icon.forEach((stuff) => {
+                    stuff.classList.toggle('hidden');
+                });
+            });
+        }
     }
 
     window.onload = () => {
-        loadComponents('header', 'src/sections/header.html');
+        loadComponents('header', 'src/sections/header.html', initNavbarToggle);
         loadComponents('hero', 'src/sections/hero.html');
-        //loadComponents('contact', 'src/sections/contact.html');
         loadComponents('footer', '/src/sections/footer.html');
     }
 </script>
