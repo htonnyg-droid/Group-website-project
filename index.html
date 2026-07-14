@@ -20,36 +20,18 @@
 </head>
 <body>
 <script>
-    const loadComponents = (id, url, callback = null) => {
+    const loadComponents = (id, url) =>  {
         fetch(url)
-            .then((response) => response.text())
-            .then((html) => {
-                document.getElementById(id).innerHTML = html;
-
-                if (callback) {
-                    callback();
-                }
-            });
-    }
-
-    const initNavbarToggle = () => {
-        const menu = document.getElementById('menu');
-        const icon = document.querySelectorAll('.icons');
-        const iconDiv = document.getElementById('dropdown');
-
-        if (iconDiv) {
-            iconDiv.addEventListener('click', () => {
-                menu.classList.toggle('hidden');
-                icon.forEach((stuff) => {
-                    stuff.classList.toggle('hidden');
-                });
-            });
-        }
+        .then((response) => response.text())
+        .then((html) => {
+            document.getElementById(id).innerHTML = html;
+        });
     }
 
     window.onload = () => {
-        loadComponents('header', 'src/sections/header.html', initNavbarToggle);
+        loadComponents('header', 'src/sections/header.html');
         loadComponents('hero', 'src/sections/hero.html');
+        //loadComponents('contact', 'src/sections/contact.html');
         loadComponents('footer', '/src/sections/footer.html');
     }
 </script>
