@@ -19,22 +19,38 @@
     </style>
 </head>
 <body class="w-screen">
-<script>
-    const loadComponents = (id, url) =>  {
-        fetch(url)
-        .then((response) => response.text())
-        .then((html) => {
-            document.getElementById(id).innerHTML = html;
-        });
-    }
+    <script>
+        const loadComponents = (id, url, callback) =>  {
+            fetch(url)
+            .then((response) => response.text())
+            .then((html) => {
+                document.getElementById(id).innerHTML = html;
+                if (typeof callback === 'function') {
+                    callback();
+                }
+            });
+        }
 
-    window.onload = () => {
-        loadComponents('header', 'src/sections/header.html');
-        loadComponents('hero', 'src/sections/hero.html');
-        //loadComponents('contact', 'src/sections/contact.html');
-        loadComponents('footer', '/src/sections/footer.html');
-    }
-</script>
+        const initHeaderToggle = () => {
+            const menu = document.getElementById('menu');
+            const icon = document.querySelectorAll('.icons');
+            const iconDiv = document.getElementById('dropdown');
+            if (!iconDiv || !menu) return;
+            iconDiv.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                icon.forEach((stuff) => {
+                    stuff.classList.toggle('hidden');
+                });
+            });
+        };
+
+        window.onload = () => {
+            loadComponents('header', 'src/sections/header.html', initHeaderToggle);
+            loadComponents('hero', 'src/sections/hero.html');
+            //loadComponents('contact', 'src/sections/contact.html');
+            loadComponents('footer', '/src/sections/footer.html');
+        }
+    </script>
 <body>
     <div id="header"></div>
     <div id="page-wrapper" class="relative w-full">

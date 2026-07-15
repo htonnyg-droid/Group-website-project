@@ -22,12 +22,12 @@
         </div>
         <div id="brand-text" class="font-semibold md:text-[48px] text-[32px] self-center px-4 py-1 rounded-md transition-colors duration-300 ease-out">Baumeister</div>
         <div class="hidden lg:block font-normal text-[24px]">
-            <a href="#about">About</a><br>
-            <a href="#services">Services</a><br>
-            <a href="#references">References</a><br>
+            <a href="#About">About</a><br>
+            <a href="#Services">Services</a><br>
+            <a href="#References">References</a><br>
             <a href="/src/sections/contact.html">Contact</a>
         </div>
-        <div class="bg-black sm:w-10 md:w-16 sm:h-6 md:h-10 lg:hidden self-center" style="clip-path: polygon(3% 20%, 76% 11%, 100% 56%, 84% 100%, 11% 94%, 0 60%)">
+        <div id="dropdown" class="bg-black sm:w-10 md:w-16 sm:h-6 md:h-10 lg:hidden self-center cursor-pointer" style="clip-path: polygon(3% 20%, 76% 11%, 100% 56%, 84% 100%, 11% 94%, 0 60%)">
             <div class="icons">
                 <div class="sm:block md:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="23px" viewBox="0 -960 960 960" width="39px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
                 <div class="hidden md:block lg:hidden self-center"><svg xmlns="http://www.w3.org/2000/svg" height="37.47px" viewBox="0 -960 960 960" width="63.54px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
@@ -46,15 +46,4 @@
     </div>
 </header>
 
-<script>
-    const menu = document.getElementById('menu');
-    const icon = document.querySelectorAll('.icons');
-    const iconDiv = document.getElementById('dropdown');
 
-    iconDiv.addEventListener('click', ()=>{
-        menu.classList.toggle('hidden');
-        icon.forEach((stuff) =>{
-            stuff.classList.toggle('hidden');
-        });
-    });
-</script>
