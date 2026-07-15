@@ -691,6 +691,15 @@
   .pt-7 {
     padding-top: calc(var(--spacing) * 7);
   }
+  .pr-10 {
+    padding-right: calc(var(--spacing) * 10);
+  }
+  .pr-20 {
+    padding-right: calc(var(--spacing) * 20);
+  }
+  .pr-30 {
+    padding-right: calc(var(--spacing) * 30);
+  }
   .pr-45 {
     padding-right: calc(var(--spacing) * 45);
   }
@@ -972,6 +981,21 @@
       padding-inline: calc(var(--spacing) * 18);
     }
   }
+  .sm\:pr-10 {
+    @media (width >= 40rem) {
+      padding-right: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:pr-20 {
+    @media (width >= 40rem) {
+      padding-right: calc(var(--spacing) * 20);
+    }
+  }
+  .sm\:pr-30 {
+    @media (width >= 40rem) {
+      padding-right: calc(var(--spacing) * 30);
+    }
+  }
   .sm\:leading-normal {
     @media (width >= 40rem) {
       --tw-leading: var(--leading-normal);
@@ -1171,6 +1195,11 @@
   .md\:px-42 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 42);
+    }
+  }
+  .md\:pr-45 {
+    @media (width >= 48rem) {
+      padding-right: calc(var(--spacing) * 45);
     }
   }
   .md\:text-right {
