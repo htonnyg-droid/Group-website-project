@@ -5,35 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../output.css">
+    
+  
 </head>
 <body class="m-0 w-screen "><div id="graphs">
 
-
-    <div id="graphs-container" class="relative h-104.75 md:h-222.25 lg:h-256.75 w-full max-w-full max-h-dvw mx-auto overflow-hidden my-32 px-4 md:px-0">
-        <div class="absolute md:hidden lg:block text-white font-medium text-[22px] lg:text-[48px] z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <p>We help you set</p>
-            <p id="text1">focus and gain</p>
-            <p>impact. By adding</p>
-            <p id="text2"> to the conversation,</p>
-            <p id="text3">not to the noise</p>
-        </div>
-        <!--yellow-->
-        <img src="/src/Vectors/yellow.png" alt="" id="yellow" class="absolute h-90 md:h-190.75 lg:h-218.25 w-74.75 md:w-158.75 lg:w-181.5 left-0 top-0 z-7">
-        <!--green left-->
-        <img src="/src/Vectors/greenLeft.png" alt="" id="green" class="absolute h-55.5 md:h-118 lg:h-135 w-54 md:w-114.5 lg:w-131 left-[3%] lg:left-[20%] top-[10%] lg:top-[15%] z-9 lg:z-8">
-        <!--Blue-->
-        <img src="/src/Vectors/blue.png" alt="" id="blue" class="absolute h-62.5 md:h-132.25 lg:h-164.75 w-66.75 md:w-141.25 lg:w-176 right-[5%] lg:right-[12.5%] z-8 lg:z-9 top-[15%]">
-        <!--pink-->
-        <img src="/src/Vectors/pink.png" alt="" id="pink" class="absolute h-38.75 md:h-82.5 lg:h-94.25 w-24.25 md:w-51.5 lg:w-59 right-[10%] lg:left-[40%] top-[5%] z-6">
-        <!--green far right-->
-        <img src="/src/Vectors/greenRight.png" alt="" id="greenRight" class="absolute h-80 md:h-169.75 lg:h-194 w-41.75 md:w-88.75 lg:w-101.5 right-0 bottom-0 lg:bottom-[-10%] z-7">
-        <!--red-->
-        <img src="/src/Vectors/red.png" alt="" id="red" class="absolute h-43 md:h-91.25 lg:h-104.5 w-74.25 md:w-157.75 lg:w-180.25 left-[20%] lg:left-[15%] bottom-[10%] lg:bottom-[5%] z-8 lg:z-7">
+  <!-- The Hero section  -->
+  <!-- Hero Text -->
+  <section class="hero relative w-screen">
+  
+    <div class="">
+  
+      <!-- text on mobile -->
+      <div id="text-mobile"
+        class="lg:hidden absolute text-left md:text-center lg:text-center ml-4 px-2 inset-0 lg:mt-60 md:font-normal font-normal md:mt-80 md:text-[32px] mt-36  lg:text-[48px] z-[60] flex justify-center text-[#EFECEA] text-[24px]">
+        <h1>We create focus and <br>
+          drive impact with <br>
+          communication that <br>
+          clearly positions and <br>
+          resonates.
+        </h1>
+      </div>
+  
+  
+      <!-- Text on desktop -->
+      <div id="text-desktop"
+        class="hidden md:hidden lg:block absolute md:text-center lg:text-center px-2 inset-0 lg:mt-60 md:font-normal font-normal md:mt-80 md:text-4xl mt-36  lg:text-5xl z-[60] flex justify-center text-[#EFECEA]">
+        <h1>We create focus and <br>
+          drive impact with <br>
+          communication that <br>
+          clearly positions and <br>
+          resonates.
+        </h1>
+      </div>
+  
+  
+      <!-- Hero section on Small & medium screens -->
+      <div class="mobile-hero lg:hidden md:mt-64 mt-72 pb-0 h-[150vh] relative">
+        <img id="yellow-mobile" src="/src/Vectors/yellow.png" alt="" class="absolute top-[0%] left-[0%] w-[77%]  z-10">
+        <img id="green-mobile" src="/src/Vectors/greenLeft.png" alt=""
+          class="absolute top-[5%] left-[1%] right-[20%] w-[55%] z-50">
+        <img id="red-mobile" src="/src/Vectors/red.png" alt="" class="absolute  left-[17%] top-[15%] w-[80%] z-40">
+        <img id="pink-mobile" src="/src/Vectors/pink.png" alt="" class="absolute top-[1%] left-[66%] w-[21%] z-0">
+        <img id="blue-mobile" src="src/Assets/blue.png" alt="" class="absolute top-[5%]  right-[1%] w-[62%] z-30">
+        <img id="green2-mobile" src="/src/Vectors/greenRight.png" alt="" class="absolute top-[7%] right-[0%] w-[42%] z-20">
+        <!-- <div id="hero-cover-mobile" class="absolute left-0 right-0 top-[420px] md:top-[725px] h-32 md:h-64 sm:h-12 bg-white z-60">
+        </div> -->
+        <div id="hero-cover-mobile" class="absolute left-0 right-0 top-[420px] md:top-[725px] h-[20vh] z-60  bg-[#ffffff]"></div>
+      </div>
+  
+  
+  
+      <!-- Hero section on desktop -->
+      <div class="desktop-hero  lg:h-[250vh] lg:block md:hidden hidden relative">
+        <img id="yellow" src="/src/Vectors/yellow.png" alt="" class="absolute top-[0%] left-[0%] w-[50%] h-[60%] z-10">
+        <img id="green" src="/src/Vectors/greenLeft.png" alt="" class="absolute top-[7%] left-[21%] w-[36%] z-30">
+        <img id="red" src="/src/Vectors/red.png" alt="" class="absolute  left-[9.5%] top-[26%] w-[50%] z-20">
+        <img id="pink" src="/src/Vectors/pink.png" alt="" class="absolute top-[1%] left-[37%] w-[22%] z-0">
+        <img id="blue" src="/src/Vectors/blue.png" alt="" class="absolute top-[4%] left-[40.5%] w-[44%] z-40">
+        <img id="green2" src="/src/Vectors/greenRight.png" alt="" class="absolute top-[12%] right-[0%] w-[29%] z-30">
+        <!-- <div id="hero-cover" class="absolute left-0 right-0 top-[750px] h-32 max-h-[800px]:h-96 bg-white  z-60"></div> -->
+      <div id="hero-cover" class="absolute left-0 right-0 top-[750px] h-[50vh] bg-[#ffffff] z-60"></div>
+      </div>
+      </div>
+  
     </div>
-</div>
+  
+  </section>
+
   <div class="flex justify-center flex-col">
 
-    <div class="mt-20 w-auto scroll-mx-0 p-8 md:p-32" id="About">
+    <div class="-mt-200 md:-mt-220 w-auto scroll-mx-0 px-8 md:px-32" id="About">
       <p class=" font-outfit md:text-5xl font-normal"> We are a Berlin-based communications agency specialising in helping
         companies and brands find their voice and position
         themselves. Whether it's brand building, identity sharpening, or communication strategy, we bring a fresh
@@ -47,13 +89,11 @@
         the long term. </p>
     </div>
 
-    <div class="flex justify-center z-30 top-0 sticky pt-7 p-26">
-      <div class="w-64 h-64 bg-[#FFE800] [clip-path:polygon(3%_10%,58%_2%,84%_31%,69%_57%,22%_51%,0_34%)]">
-      
-      </div>
+    <div class="flex justify-center z-30 top-0 sticky py-26 items-center">
+      <img src="/src/Vectors/yelloHero.png" alt="">
     </div>
 
-    <div class="flex flex-col p-18 lg:flex-row justify-between md:px-42" id="Services">
+    <div class="flex flex-col px-18 lg:flex-row justify-between md:px-42" id="Services">
       <div class="flex flex-col mb-28 text-1xl md:text-3xl gap-10 font-bold max-w-75">
         <p>brand strategy</p>
         <p>corporate Identity & website development</p>
@@ -65,7 +105,7 @@
 
       <div class="flex justify-end items-center px-2 sm:px-4 md:px-0 ">
         <div class="relative z-0 w-full max-w-[320px] sm:max-w-90 md:max-w-90 lg:max-w-100">
-          <img class="block z-10 w-full h-auto object-contain" src="./src/sections/greenbg.png" alt="">
+          <img class="block z-10 w-full h-auto object-contain" src="/src/Vectors/greenbg.png" alt="">
           <p
             class="absolute inset-0 flex items-center justify-center p-6 sm:p-8 md:p-10 text-white text-[12px] md:text-lg leading-tight sm:leading-normal text-left">
             Our strategic approach is a collaborative journey that starts with analysing the initial situation and leads to
@@ -114,10 +154,9 @@
     </div>
 
     <div class="z-50">
-        <div class="bg-red-600  [clip-path:polygon(3%_13%,73%_4%,100%_49%,85%_97%,24%_92%,0_49%)] w-xl h-94 max-md:w-lg max-md:h-72 max-sm:w-80 max-sm:h-60 mx-auto my-44"></div>
+        <div class="bg-red-600  [clip-path:polygon(3%_13%,73%_4%,100%_49%,85%_97%,24%_92%,0_49%)] w-xl h-94 max-md:w-lg max-md:h-72 max-sm:w-80 max-sm:h-60 mx-auto mb-32"></div>
     </div>
   </div>
-   
 </body>
 </html>
 
