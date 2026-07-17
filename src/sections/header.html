@@ -20,11 +20,22 @@
             <div>DE</div>
             <div>EN</div>
         </div>
-        <div id="brand-text" class="font-semibold md:text-[48px] text-[32px] self-center px-4 py-1 rounded-md transition-colors duration-300 ease-out">Baumeister</div>
+        <!-- <div id="brand-text" class="font-semibold md:text-[48px] text-[32px] self-center px-4 py-1 rounded-md transition-colors duration-300 ease-out">Baumeister</div> -->
+
+        <div>
+        
+            <a href="#" class=" flex justify-center ">
+                <h1 class=" absolute lg:block  sm:pt-3 sm:pl-7 md:block text-[22px] font-semibold text-3xl md:text-[55px] lg:text-5xl z-50">
+                    Baumeister
+                </h1>
+            </a>
+            <img src="/src/Vectors/bOUM.png" alt="" class="md:hidden lg:hidden relative">
+        
+        </div>
         <div class="hidden lg:block font-semibold text-[24px]">
-            <a href="#about">About</a><br>
-            <a href="#services">Services</a><br>
-            <a href="#references">References</a><br>
+            <a href="#About">About</a><br>
+            <a href="#Services">Services</a><br>
+            <a href="#References">References</a><br>
             <a href="/src/sections/contact.html">Contact</a>
         </div>
         <div id="dropdown" class="bg-black sm:w-10 md:w-16 sm:h-6 md:h-10 lg:hidden self-center" style="clip-path: polygon(3% 20%, 76% 11%, 100% 56%, 84% 100%, 11% 94%, 0 60%)">
@@ -46,15 +57,4 @@
     </div>
 </header>
 
-<script>
-    const menu = document.getElementById('menu');
-    const icon = document.querySelectorAll('.icons');
-    const iconDiv = document.getElementById('dropdown');
 
-    iconDiv.addEventListener('click', ()=>{
-        menu.classList.toggle('hidden');
-        icon.forEach((stuff) =>{
-            stuff.classList.toggle('hidden');
-        });
-    });
-</script>
